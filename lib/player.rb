@@ -1,4 +1,4 @@
-require './map'
+require File.dirname(__FILE__) + '/map.rb'
 
 class Player
   attr_reader :position, :num_moves

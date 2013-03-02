@@ -1,6 +1,7 @@
-require './room'
-require './player'
-require './game'
+dir = File.dirname(__FILE__)
+require dir + '/lib/room.rb'
+require dir + '/lib/player.rb'
+require dir + '/lib/game.rb'
 
 # Create the map - represented by a matrix
 map = [

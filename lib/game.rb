@@ -11,7 +11,10 @@ class Game
     ].join("\n"),
     :quit => "You have quit the game.",
     :unknown_command => "I can't understand that.",
-    :room_not_found => "There is no room there."
+    :room_not_found => "There is no room there.",
+    :welcome => [
+
+    ].join("\n")
   }
 
   def initialize player
