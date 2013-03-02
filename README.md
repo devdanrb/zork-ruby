@@ -8,7 +8,7 @@ Currently, here are the moves you can make:
 * `go east`
 * `go west`
 
-You can gracefully exit the game by typing `quit`. Or else, just `Ctrl+C`.
+You can gracefully exit the game by typing `\quit`.
 
 How to play:
 * Download the project files

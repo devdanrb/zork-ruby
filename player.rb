@@ -4,7 +4,7 @@ class Player
   attr_reader :position, :num_moves
 
   def initialize matrix
-    @position = {:x => 0, :y => 0}
+    @position = {:i => 0, :j => 0}
     @num_moves = 0
     @map = Map.new matrix
   end
@@ -26,21 +26,21 @@ class Player
   end
 
   def move_to where
-    x = @position[:x]
-    y = @position[:y]
+    j = @position[:j]
+    i = @position[:i]
 
     case where
       when "west"
-        x -= 1
+        j -= 1
       when "east"
-        x += 1
+        j += 1
       when "north"
-        y -= 1
+        i -= 1
       when "south"
-        y += 1
+        i += 1
     end
 
-    new_position = {:x => x, :y => y}
+    new_position = {:i => i, :j => j}
 
     if @map.exists(new_position) == true
       @num_moves += 1

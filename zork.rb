@@ -2,20 +2,24 @@ require './room'
 require './player'
 require './game'
 
-# Create the map
+# Create the map - represented by a matrix
 map = [
   # row 0
   [
     # column 0
     Room.new,
     # column 1
-    Room.new
+    Room.new,
+    # column 2
+    nil
   ],
   # row 1
   [
     # column 0
     Room.new,
     # column 1
+    Room.new,
+    # column 2
     Room.new
   ]  
 ]

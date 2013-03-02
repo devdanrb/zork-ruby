@@ -8,9 +8,12 @@ class Map
   end
 
   def exists position
-    i = position[:y]
-    j = position[:x]
+    i = position[:i]
+    j = position[:j]
 
+    # Disallow:
+    # * negative indexes - teleport from one edge to another
+    # * out of bounds
     return false if i < 0 or j < 0 or @matrix.element(i, j) == nil
     return true
   end

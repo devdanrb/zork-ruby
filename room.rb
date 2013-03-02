@@ -1,6 +1,4 @@
 class Room
-  def initialize description = nil, options = nil
-    @description = description
-    @options = options
+  def initialize
   end
 end
