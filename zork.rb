@@ -4,8 +4,20 @@ require './game'
 
 # Create the map
 map = [
-  [Room.new, Room.new],
-  [Room.new, Room.new]
+  # row 0
+  [
+    # column 0
+    Room.new,
+    # column 1
+    Room.new
+  ],
+  # row 1
+  [
+    # column 0
+    Room.new,
+    # column 1
+    Room.new
+  ]  
 ]
 
 # Create and start the game
