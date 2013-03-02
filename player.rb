@@ -5,7 +5,7 @@ class Player
 
   def initialize matrix
     @current_room = [0, 0] # start in the first room
-    @previous_room = nil
+    @previous_room = [nil, nil] # no previous room yet
     @num_moves = 0
     @map = Map.new matrix
   end
@@ -18,11 +18,13 @@ class Player
   end
 
   def go_left
-    if @map.left(@current_room) != nil
+    if @map.left(@current_room) == true
       @previous_room = @current_room
       @current_room = [@current_room[0] - 1, @current_room[1]]
       @num_moves += 1
       puts "Going left..."
     end
+
+    puts "There is no room there."
   end
 end

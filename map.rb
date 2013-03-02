@@ -4,6 +4,7 @@ class Map
   attr_accessor :matrix
 
   def initialize matrix
+    @array = matrix
     @matrix = Matrix.columns matrix
   end
 
@@ -11,11 +12,10 @@ class Map
     x = room[0] - 1
     y = room[1]
 
-    if @matrix[x - 1, y] == nil
-      return nil
-    end
+    return false if @array.length >= y
+    return false if @array[y].length >= x
 
-    return [x - 1, y]
+    return true
   end
 
   def right room
