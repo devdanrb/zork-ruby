@@ -18,7 +18,7 @@ class Player
   end
 
   def go_left
-    if @map.left @current_room != nil
+    if @map.left(@current_room) != nil
       @previous_room = @current_room
       @current_room = [@current_room[0] - 1, @current_room[1]]
       @num_moves += 1
