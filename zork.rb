@@ -1,27 +1,28 @@
-dir = File.dirname(__FILE__)
-require dir + '/lib/room.rb'
-require dir + '/lib/player.rb'
-require dir + '/lib/game.rb'
+# -*- encoding: utf-8 -*-
+$:.push(File.dirname(File.absolute_path(__FILE__)) + '/lib')
+require 'room.rb'
+require 'player.rb'
+require 'game.rb'
 
 # Create the map - represented by a matrix
 map = [
   # row 0
   [
     # column 0
-    Room.new,
+    Room.new(:description => "You are in a medow"),
     # column 1
-    Room.new,
+    Room.new(:description => "You are in a medow"),
     # column 2
     nil
   ],
   # row 1
   [
     # column 0
-    Room.new,
+    Room.new(:description => "You are in a medow"),
     # column 1
-    Room.new,
+    Room.new(:description => "You are in a medow"),
     # column 2
-    Room.new
+    Room.new(:description => "You are in a medow")
   ]  
 ]
 

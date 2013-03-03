@@ -1,7 +1,8 @@
-require File.dirname(__FILE__) + '/map.rb'
+# -*- encoding: utf-8 -*-
+require 'map.rb'
 
 class Player
-  attr_reader :position, :num_moves
+  attr_reader :position, :num_moves, :map
 
   def initialize matrix
     @position = {:i => 0, :j => 0}

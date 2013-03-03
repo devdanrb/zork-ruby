@@ -1,0 +1,2 @@
+* When getting to a room, show options (north, south, east, west) like "To the north, you have a field."
+* Add possibility for ennemies in rooms, where if you get in a room, you can either fight in some way, or "go back".

@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 require 'matrix'
 
 class Map
@@ -16,5 +17,9 @@ class Map
     # * out of bounds
     return false if i < 0 or j < 0 or @matrix.element(i, j) == nil
     return true
+  end
+
+  def get_room i, j
+    return @matrix.element i, j
   end
 end
