@@ -7,8 +7,8 @@ class Game
   @@messages = {
     :help => [
       "Commands:",
-      "- \\quit: stop the game",
-      "- \\help: display this help message"
+      "- quit: stop the game",
+      "- help: display this help message"
     ].join("\n"),
     :quit => [
       "You have quit the game."
@@ -49,10 +49,10 @@ class Game
       result = true
 
       case @input
-      when "\\quit"
+      when "\quit"
         puts @@messages[:quit]
         break
-      when "\\help"
+      when "\help"
         puts @@messages[:help]
       when "go west"
         result = @player.go_west
